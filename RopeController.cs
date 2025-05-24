@@ -8,9 +8,9 @@ public class RopeController : MonoBehaviour
     public Transform characterTransform; // Assign the main character transform (for relative positioning)
 
     public int segments = 20; // Number of segments for the rope's curve
-    public float ropeSag = 0.5f; // How much the rope sags downwards from the hands to the swing center
-    public float swingSpeed = 5f; // How fast the rope swings (radians per second)
-    public float swingRadius = 1.0f; // Radius of the rope's lowest point circular path
+    public float ropeSag = 1f; // How much the rope sags downwards from the hands to the swing center
+    public float swingSpeed = 10f; // How fast the rope swings (radians per second)
+    public float swingRadius = 10f; // Radius of the rope's lowest point circular path
 
     private LineRenderer lineRenderer;
     private float currentAngle = 0f; // This will go from 0 to 2*PI
