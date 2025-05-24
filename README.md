@@ -24,7 +24,7 @@ A simple Unity project demonstrating how to create a dynamic jump rope effect us
 
 ## How It Works
 
-### 1. RopeController.cs
+### RopeController.cs
 
 This script is attached to an empty GameObject (e.g., "JumpRope") which also has a `LineRenderer` component.
 
@@ -41,8 +41,10 @@ This script is attached to an empty GameObject (e.g., "JumpRope") which also has
     where `P0` is `leftHandHold.position`, `P1` is `lowestPoint`, and `P2` is `rightHandHold.position`.
 
 ### Setting up Animation
+
+
 **Example for Mixamo Users:**
-1. Download a character and a jump rope animation (e.g., "Jump Rope") from [Mixamo.com](https://www.mixamo.com).
+1. Use or download a character and a jump rope animation (e.g., "Jump Rope") from [Mixamo.com](https://www.mixamo.com).
 2. Import them into your Unity project.
 3. Replace the "Capsule" in the DemoScene with your Mixamo character.
 4. Find the hand bones in your character's hierarchy (e.g., `mixamorig:LeftHand`, `mixamorig:RightHand`).
@@ -59,7 +61,7 @@ You can adjust the following public variables in the `RopeController` script in 
 -   **Segments:** Number of points in the Line Renderer (more segments = smoother rope, but more computation).
 -   **Rope Sag:** How much the middle of the rope hangs down.
 -   **Swing Speed:** How fast the rope rotates when not driven by animation events.
--   **Swing Radius:** The radius of the circle the rope's lowest point makes.
+-   **Swing Radius:** The radius of the circle the rope's lowest point makes. If the rope swing (rotation) animation is not noticable you might want to increase the radius to up 100.
 
 ## License
 
